@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SM logicsim</title>
+
+	<!-- Link to your external CSS file -->
+	<link rel="stylesheet" href="styles.css">
+
+	<!-- Link to your external JavaScript file -->
+	<script src="script.js" defer></script>
+</head>
+<body id="body">
+
+	<div id="tools">
+		<div id="inputs">
+			<div><input type="number" id="gridSize" name="quantity" min="1" value="8"><p>workspace size</p></div>
+			<div><input type="checkbox" id="drawMode" name="drawMode" value="false"><p>alternative style</p></div>
+			<div><button id="export" onclick="exportToSM()">export</button><p>export blueprint</p></div>
+			<div><input type="checkbox" id="compactExport" name="compact" value="false"><p>compact export</p></div>
+			<div><input type="checkbox" id="startAndStop" name="startAndStop" value="false"><p>start/stop sim</p></div>
+			<div><input type="number" id="targetTPS" name="TPS" min="1" value="4"><p>target TPS</p></div>
+			<div><button id="compact" onclick="createCompactGate()">compact</button><p>create compact gate</p></div>
+			<div><input type="text" id="compactName" name="Name" value="compactGate"><p>compact gate name</p></div>
+
+			<div><button id="compact" onclick="runCode()">runCode</button><p>run code</p></div>
+			<div><input type="text" id="codeToRun" name="codeToRun" value="alert('test')"><p>what code to run</p></div>
+		</div>
+
+		<div id="gates">
+			<div><p>AND</p><img id="and" src="images/and.png" alt=""></div>
+			<div><p>OR</p><img id="or" src="images/or.png" alt=""></div>
+			<div><p>XOR</p><img id="xor" src="images/xor.png" alt=""></div>
+			<div><p>NAND</p><img id="nand" src="images/nand.png" alt=""></div>
+			<div><p>NOR</p><img id="nor" src="images/nor.png" alt=""></div>
+			<div><p>XNOR</p><img id="xnor" src="images/xnor.png" alt=""></div>
+		</div>
+
+		<div id="compactGates">
+			
+		</div>
+
+	</div>
+
+	<canvas id="myCanvas"></canvas>
+	
+</body>
+</html>

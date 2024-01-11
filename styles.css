@@ -1,0 +1,67 @@
+#myCanvas {
+	position: absolute;
+}
+
+#tools {
+	position: absolute;
+	overflow: auto;
+}
+
+#inputs {
+	margin: 0.5vh;
+	padding: 0.5vh;
+	background-color: #bdbdbd;
+}
+
+#inputs > div{
+	display: grid;
+	grid-template-columns: 1fr 1fr; /* Equal space for both columns */
+	gap: 0.5vh; /* Adjust gap as needed */
+}
+
+#inputs > div > * {
+	width: 100%; 
+	height: 100%; 
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0.5vh;
+}
+
+#gates {
+	flex: 1;
+	user-select: none;
+}
+
+#gates div {
+	margin: 0.5vh;
+	display: flex;
+	border: 0.5vh solid black;
+	padding: 0.5vh;
+}
+
+#gates div img {
+	flex: 1;
+	image-rendering: pixelated;
+}
+
+#gates div p {
+	flex: 1;
+}
+
+#compactGates div {
+	margin: 0.5vh;
+	display: flex;
+	border: 0.5vh solid black;
+	padding: 0.5vh;
+}
+
+#compactGates div p {
+	flex: 1;
+}
+
+body {
+	margin: 0px;
+	padding: 10px;
+}
